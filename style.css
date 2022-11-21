@@ -15,6 +15,9 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
 }
 
 .prod-title {
@@ -23,17 +26,14 @@ body {
   text-transform: uppercase;
   background-color: #e6e0e0;
   padding: 15px;
+  grid-column: 1 / -1;
 }
 
 .c1 {
-  float: left;
-  width: 35%;
   padding: 10px 20px;
 }
 
 .c2 {
-  float: right;
-  width: 35%;
   padding: 10px 20px;
 }
 
@@ -43,11 +43,6 @@ body {
   margin-top: 10px;
   margin-bottom: 15px;
   float: left;
-}
-
-.prod-img {
-  float: left;
-  width: 30%;
 }
 
 .prod-shipping {
@@ -143,6 +138,7 @@ body {
   padding: 15px;
   width: 100%;
   border-top: 4px solid black;
+  grid-column: 1 / -1;
 }
 
 .add-cart:hover {
